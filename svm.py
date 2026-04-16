@@ -34,7 +34,7 @@ for epoch in range(epochs):
     w-=lr*dw
     b-=lr*db
 
-    # if epoch%100==0:
-    #     print(f"Epoch {epoch}, Loss: {hige_loss:.4f}, W: {w:.4f}, b: {b:.4f}")
+    if epoch%100==0:
+        print(f"Epoch {epoch}, Loss: {hige_loss:.4f}, W: {w}, b: {b:.4f}")
 
 print("\nFinal:", w, b)
